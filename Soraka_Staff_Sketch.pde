@@ -9,15 +9,26 @@ void setup() {
 void draw() {
 
   // Clear the Background
-  background(34);
-  // Runs in a Loop
-  //Make a Crescent Moon
-  beginShape();
-  vertex(100, 350);
-  vertex(500, 350);
-  curveVertex(550, 100);// "Right Handle" for Curve
-  curveVertex(500, 350);// Real Start of Curve
-  curveVertex(100, 350);//Real End of Curve
-  curveVertex(50, 100);
-  endShape(CLOSE);
+  background(50, 0, 50);
+ 
+  //Make the shaft of the staff
+  strokeWeight(5);
+  stroke(200, 200, 0);
+  line(500, 300, 50, 300);
+  
+  //Make the Red Orb
+  noStroke();
+  fill(200, 0, 0);
+  ellipse(50, 300, 50, 50);
+  
+  //Start of Crescent Moon
+  
+  //Make the Yellow Circle
+  fill(200, 200, 0);
+  ellipse(350, 300, 200, 200);
+  
+   //Background Circle Overlap Circle
+  
+  fill(50, 0, 50);
+  ellipse(350, 300, 150, 150);
 }
