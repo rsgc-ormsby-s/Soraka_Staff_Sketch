@@ -11,10 +11,10 @@ void draw() {
   // Clear the Background
   background(50, 0, 50);
  
-  //Make the shaft of the staff
-  strokeWeight(5);
+  //Make the main shaft of the staff
+  strokeWeight(10);
   stroke(200, 200, 0);
-  line(500, 300, 50, 300);
+  line(444, 300, 50, 300);
   
   //Make the Red Orb
   noStroke();
@@ -30,5 +30,8 @@ void draw() {
    //Background Circle Overlap Circle
   
   fill(50, 0, 50);
-  ellipse(350, 300, 150, 150);
+  ellipse(350, 280, 150, 200);
+  
+  //Create Yellow Line in Circle
+  line(500,200, 500, 200);
 }
